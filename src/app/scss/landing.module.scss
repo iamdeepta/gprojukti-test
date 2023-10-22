@@ -1,0 +1,53 @@
+.landingLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+
+  .exportButton {
+    align-self: flex-end;
+  }
+
+  .csvButton {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    margin: 0;
+    outline: none;
+    border: none;
+    width: 12rem;
+    color: white;
+    background: #1fa71f;
+    text-decoration: none;
+  }
+
+  .tableLayout {
+    overflow-x: auto;
+    height: 80vh;
+  }
+
+  .paginationLayout {
+    display: flex;
+    gap: 1rem;
+    align-self: flex-end;
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0.2, 0.2, 0.2, 0.2);
+  display: none;
+
+  &.backdropActive {
+    display: block;
+  }
+}
